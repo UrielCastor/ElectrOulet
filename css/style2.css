@@ -1,0 +1,95 @@
+/*slector + propiedad+valor
+slector {
+pripiedad:valor;
+}
+reset de css
+el reset css elimina los efectos default de los navegadores
+el * es el selector universal
+*/
+    /*Body*/   
+    *{
+        margin: 0;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    body{
+        
+        background-color: rgba(133, 130, 130, 0.514);
+    }
+    /*header*/
+    .logo{
+            
+        width:60px;
+    }
+ 
+    .navbar-light .navbar-nav .nav-link.active{
+        font-family: "Michroma", sans-serif;
+        margin: 01 0px;
+        border: solid rgba(103, 103, 103, 0.21) 1px; 
+        background-color: rgba(103, 103, 103, 0.21);
+        border-radius: 10%;
+
+    }
+    .navbar-light .navbar-nav .nav-link{
+        
+        font-family: "Michroma", sans-serif;
+        margin: 01 0px;
+        margin-left: auto;
+
+    }
+    .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover{
+        
+    }
+    /*--------------------------------------------- footer--------------------------------------------------------------------*/
+   
+    footer{
+        display: flex;
+        position:center;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        top: 100%;
+        width: 100%;
+        margin-top: 0;
+        padding: 0.5rem;
+        background-color: rgb(85, 141, 167);
+        border: 1px solid #000000;
+        font-family: "Michroma", sans-serif;
+        
+    }
+    .imgfot{
+        display: flex;
+        width: 40px;
+        background-position: center;
+        background-size:contain;
+        
+    }
+   .divfot{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    flex-wrap: wrap;
+    font-family: "Michroma", sans-serif;
+    list-style-type: none;
+    text-decoration: none;
+   }
+.divfot2{
+    display: flex;
+    align-items:center;
+    justify-content: right;
+    color: rgb(255, 255, 255);
+    font-family: "Michroma", sans-serif;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+/*---------------------------grid*****************************************/
+.grid_conteiner{
+    display: grid;
+    grid-template-areas: "testi1 testi2 testi3";
+    grid-template-columns: 1fr 1fr 1fr;
+} 
+/*---------------------Mobile*****************************************/
+@media{
+    
+}
