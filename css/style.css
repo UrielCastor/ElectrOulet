@@ -237,7 +237,7 @@ el * es el selector universal
         grid-template-rows: 400px 400px 400px;;
     }
     .card{
-        display flex;
+        display: flex;
         background-color:rgba(156, 154, 154, 0.63);
         border: 2px solid black;
     }
