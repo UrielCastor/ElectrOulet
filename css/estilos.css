@@ -32,15 +32,39 @@ header .navbar-light .navbar-nav .nav-link:hover {
 
 /*----------------------------titulo-----------------------------*/
 .electroulet {
-  color: black;
+  color: rgb(85, 141, 167);
   text-align: center;
-  text-decoration: underline;
+  text-decoration: none;
   font-family: "Michroma", sans-serif;
-  font-size: x-large;
+  font-size: 80px;
   font-weight: 900;
+  opacity: 0;
+  animation: myanimacion 3s;
+  animation-fill-mode: forwards;
+}
+@keyframes myanimacion {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /*-------------------Main----------------------------------*/
+.mainsito {
+  opacity: 0;
+  animation: myanimacion2 15s;
+  animation-fill-mode: forwards;
+}
+@keyframes myanimacion2 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .mainsito .centro {
   /*esto es el centro de la pagina web*/
   display: flex;
@@ -103,6 +127,7 @@ header .navbar-light .navbar-nav .nav-link:hover {
   font-family: "Michroma", sans-serif;
 }
 
+/*-----------------ANIMACION TITULO--------------------*/
 /*-------------------CONTACTO-----------------------------------*/
 .centro3 {
   height: 100%;
