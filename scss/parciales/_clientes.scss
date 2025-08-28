@@ -1,0 +1,24 @@
+@use "./variables" as *;
+
+/*---------------------clientes--------------------------------------*/
+.clientess {
+    .gridconteiner {
+        width: 100%;
+        display: grid;
+        margin-left: 2%;
+        margin-top: 2%;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 400px 400px 400px;
+
+        .card {
+            display: flex;
+            background-color: rgba(156, 154, 154, 0.63);
+            border: 2px solid black;
+
+            .card-body {
+                justify-items: center;
+                background-color: rgba(214, 214, 214, 0.527);
+            }
+        }
+    }
+}

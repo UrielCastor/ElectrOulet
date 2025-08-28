@@ -1,0 +1,97 @@
+/*---------------------Mobile*****************************************/
+@use "./variables" as *;
+
+@media (max-width: 650px){
+    /*Index*/
+    .centro{
+        display: grid;
+        grid-template-columns: 100%;
+        margin-right: 4%;
+    }
+    .caja{
+        display: grid;
+        width: 100%;
+        height: auto;
+        justify-content:space-around; /*alineacion horizontal*/
+        justify-items: center;
+        align-content: center;
+    }
+    .descripciones2{
+       display: grid;
+        align-content: center;
+        width: 50%;
+        height: 50%;
+        border: solid #00000069 3px;
+        font-family: "Michroma", sans-serif;
+        font-size:large;
+        font-weight: 600;
+        border-radius: 10%;  
+    }
+    .descripciones{
+        display: grid;
+        align-content: center;
+        width: 50%;
+        height: 50%;
+        border: solid #00000069 3px;
+        font-family: "Michroma", sans-serif;
+        font-size:large;
+        font-weight: 600;
+        border-radius: 10%;   
+    }
+    /*contacto*/
+    .cntcentro{
+        display: grid;
+        margin-left: 2%;
+        justify-content: left;
+        height: 450px;
+    }
+    /*Arma Tu PC*/
+    .atpcentro{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: left;
+    }
+    /*locales y medios de pago*/
+    .centro2{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-columns: 100%;
+        margin-right: 4%;
+    }
+    .mdpcentro{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-columns: auto;
+        height: 90%;
+        background-color:rgba(156, 154, 154, 0.63);
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+    }
+    .mapita{
+        width: 100%;
+        height: 100%;
+        
+    }
+    .descripciones2{
+        display: none;
+
+    }
+    /*Nuestos Clientes*/
+    .clientess{
+        margin-right: 4%;;
+    }
+    .gridconteiner{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 600px;
+    }
+    /*Footer*/
+    .divfot{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    
+}

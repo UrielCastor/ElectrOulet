@@ -1,0 +1,35 @@
+@use "./variables" as *;
+/*-----------------locales y medios de pago*/
+.centro2{
+    display: flex;
+     .mdpcentro{
+        width: 100%;
+        height: 30%;
+        background-color:rgba(156, 154, 154, 0.63);/*rgba(133, 130, 130, 0.514);*/
+        border: solid #00000083 4px;
+        margin: 10px;
+        top: 10px;
+        text-align: center;
+        padding: 10px;
+        line-height: 100px;
+           .imgmdp{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        color: rgb(255, 255, 255);
+        flex-wrap: wrap;
+        font-family: "Michroma", sans-serif;
+        list-style-type: none;
+        text-decoration: none;
+    }
+    .h2mdp{
+        color: rgb(13, 26, 211);
+        text-decoration: underline;
+        font-size: large;   
+    }
+    .h3mdp{
+        margin: 1px;
+        font-size: small;
+    }
+    }
+}

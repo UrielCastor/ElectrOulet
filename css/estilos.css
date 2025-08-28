@@ -1,0 +1,333 @@
+* {
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(133, 130, 130, 0.514);
+}
+
+/*-----------------header-----------------------------*/
+header .logo {
+  width: 60px;
+}
+header .navbar-light .navbar-nav .nav-link.active {
+  font-family: "Michroma", sans-serif;
+  margin: 1 0px;
+  border: solid rgba(103, 103, 103, 0.21) 1px;
+  background-color: rgba(103, 103, 103, 0.21);
+  color: rgb(2, 175, 255);
+  border-radius: 10%;
+}
+header .navbar-light .navbar-nav .nav-link {
+  font-family: "Michroma", sans-serif;
+  margin: 1 0px;
+  margin-left: auto;
+}
+header .navbar-light .navbar-nav .nav-link:focus,
+header .navbar-light .navbar-nav .nav-link:hover {
+  color: rgb(2, 175, 255);
+}
+
+/*----------------------------titulo-----------------------------*/
+.electroulet {
+  color: black;
+  text-align: center;
+  text-decoration: underline;
+  font-family: "Michroma", sans-serif;
+  font-size: x-large;
+  font-weight: 900;
+}
+
+/*-------------------Main----------------------------------*/
+.mainsito .centro {
+  /*esto es el centro de la pagina web*/
+  display: flex;
+  /*activa flexbox*/
+  padding: 10px;
+  justify-content: center;
+  /*alineacion horizontal*/
+  align-items: center;
+  /*alineacion vertical*/
+}
+.mainsito .centro .caja {
+  /*esto son los diiferentes box de publicacion*/
+  width: 100%;
+  height: 50%;
+  background-color: rgba(156, 154, 154, 0.63);
+  /*rgba(133, 130, 130, 0.514);*/
+  border: solid rgba(0, 0, 0, 0.5137254902) 4px;
+  margin: 10px;
+  top: 10px;
+  text-align: center;
+  padding: 10px;
+  line-height: 100px;
+}
+.mainsito .centro .caja .descripciones {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border: solid rgba(0, 0, 0, 0.4117647059) 3px;
+  font-family: "Michroma", sans-serif;
+  font-size: x-large;
+  font-weight: 800;
+  border-radius: 10%;
+}
+.mainsito .centro .caja .imgventa {
+  width: 60%;
+  background-position: center;
+  background-size: contain;
+  border-radius: 10%;
+}
+.mainsito .centro .caja .botoncomprar {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  padding: 10px 30%;
+  border-radius: 10%;
+  font-family: "Michroma", sans-serif;
+  font-size: large;
+  font-weight: 800;
+}
+.mainsito .centro .caja .botoncomprar:hover {
+  background-color: rgb(2, 175, 255);
+}
+.mainsito .centro .caja .ordenboton {
+  display: flex;
+  justify-content: center;
+}
+.mainsito .centro .caja .precio {
+  color: rgb(255, 255, 255);
+  font-family: "Michroma", sans-serif;
+}
+
+/*-------------------CONTACTO-----------------------------------*/
+.centro3 {
+  height: 100%;
+}
+.centro3 .centro2 {
+  display: flex;
+}
+.centro3 .centro2 .cntcentro {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-columns: 200px;
+  justify-content: center;
+  font-size: large;
+  font-weight: 800;
+  width: 100%;
+  height: 30%;
+  background-color: rgba(156, 154, 154, 0.63);
+  /*rgba(133, 130, 130, 0.514);*/
+  border: solid rgba(0, 0, 0, 0.5137254902) 4px;
+  color: rgb(255, 255, 255);
+  font-family: "Michroma", sans-serif;
+  padding: 5%;
+}
+
+/*--------------------------------------------- arma tu pc--------------------------------------------------------------------*/
+.atpcentro {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: large;
+  font-weight: 800;
+  width: 100%;
+  height: 30%;
+  background-color: rgba(156, 154, 154, 0.63); /*rgba(133, 130, 130, 0.514);*/
+  border: solid rgba(0, 0, 0, 0.5137254902) 4px;
+  color: rgb(255, 255, 255);
+  font-family: "Michroma", sans-serif;
+  padding: 5%;
+}
+
+/*-----------------locales y medios de pago*/
+.centro2 {
+  display: flex;
+}
+.centro2 .mdpcentro {
+  width: 100%;
+  height: 30%;
+  background-color: rgba(156, 154, 154, 0.63); /*rgba(133, 130, 130, 0.514);*/
+  border: solid rgba(0, 0, 0, 0.5137254902) 4px;
+  margin: 10px;
+  top: 10px;
+  text-align: center;
+  padding: 10px;
+  line-height: 100px;
+}
+.centro2 .mdpcentro .imgmdp {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  flex-wrap: wrap;
+  font-family: "Michroma", sans-serif;
+  list-style-type: none;
+  text-decoration: none;
+}
+.centro2 .mdpcentro .h2mdp {
+  color: rgb(13, 26, 211);
+  text-decoration: underline;
+  font-size: large;
+}
+.centro2 .mdpcentro .h3mdp {
+  margin: 1px;
+  font-size: small;
+}
+
+/*---------------------clientes--------------------------------------*/
+.clientess .gridconteiner {
+  width: 100%;
+  display: grid;
+  margin-left: 2%;
+  margin-top: 2%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 400px 400px 400px;
+}
+.clientess .gridconteiner .card {
+  display: flex;
+  background-color: rgba(156, 154, 154, 0.63);
+  border: 2px solid black;
+}
+.clientess .gridconteiner .card .card-body {
+  justify-items: center;
+  background-color: rgba(214, 214, 214, 0.527);
+}
+
+/*---------------------------Footer---------------------------*/
+footer {
+  display: flex;
+  position: center;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  top: 100%;
+  width: 100%;
+  margin-top: 0;
+  padding: 0.5rem;
+  background-color: rgb(85, 141, 167);
+  border: 1px solid #000000;
+  font-family: "Michroma", sans-serif;
+}
+footer .divfot {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  flex-wrap: wrap;
+  font-family: "Michroma", sans-serif;
+  list-style-type: none;
+  text-decoration: none;
+}
+footer .divfot .imgfot {
+  display: flex;
+  width: 40px;
+  background-position: center;
+  background-size: contain;
+}
+footer .divfot2 {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  color: rgb(255, 255, 255);
+  font-family: "Michroma", sans-serif;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+/*---------------MediaQ---------------------*/
+/*---------------------Mobile*****************************************/
+@media (max-width: 650px) {
+  /*Index*/
+  .centro {
+    display: grid;
+    grid-template-columns: 100%;
+    margin-right: 4%;
+  }
+  .caja {
+    display: grid;
+    width: 100%;
+    height: auto;
+    justify-content: space-around; /*alineacion horizontal*/
+    justify-items: center;
+    align-content: center;
+  }
+  .descripciones2 {
+    display: grid;
+    align-content: center;
+    width: 50%;
+    height: 50%;
+    border: solid rgba(0, 0, 0, 0.4117647059) 3px;
+    font-family: "Michroma", sans-serif;
+    font-size: large;
+    font-weight: 600;
+    border-radius: 10%;
+  }
+  .descripciones {
+    display: grid;
+    align-content: center;
+    width: 50%;
+    height: 50%;
+    border: solid rgba(0, 0, 0, 0.4117647059) 3px;
+    font-family: "Michroma", sans-serif;
+    font-size: large;
+    font-weight: 600;
+    border-radius: 10%;
+  }
+  /*contacto*/
+  .cntcentro {
+    display: grid;
+    margin-left: 2%;
+    justify-content: left;
+    height: 450px;
+  }
+  /*Arma Tu PC*/
+  .atpcentro {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: left;
+  }
+  /*locales y medios de pago*/
+  .centro2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-columns: 100%;
+    margin-right: 4%;
+  }
+  .mdpcentro {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-columns: auto;
+    height: 90%;
+    background-color: rgba(156, 154, 154, 0.63);
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+  }
+  .mapita {
+    width: 100%;
+    height: 100%;
+  }
+  .descripciones2 {
+    display: none;
+  }
+  /*Nuestos Clientes*/
+  .clientess {
+    margin-right: 4%;
+  }
+  .gridconteiner {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 600px;
+  }
+  /*Footer*/
+  .divfot {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */
