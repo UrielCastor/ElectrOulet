@@ -17,6 +17,20 @@ header {
         width: 60px;
     }
 
+    .navbar>.container,
+    .navbar>.container-fluid,
+    .navbar>.container-lg,
+    .navbar>.container-md,
+    .navbar>.container-sm,
+    .navbar>.container-xl,
+    .navbar>.container-xxl {
+        display: flex;
+        flex-wrap: inherit;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+    }
+
     .navbar-light .navbar-nav .nav-link.active {
         font-family: $letra;
         margin: 01 0px;
@@ -25,6 +39,7 @@ header {
         color: rgb(2, 175, 255);
         border-radius: 10%;
 
+
     }
 
     .navbar-light .navbar-nav .nav-link {
@@ -32,6 +47,7 @@ header {
         font-family: $letra;
         margin: 01 0px;
         margin-left: auto;
+
 
     }
 
@@ -52,10 +68,16 @@ header {
     opacity: 0;
     animation: myanimacion 3s;
     animation-fill-mode: forwards;
+
     @keyframes myanimacion {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-}
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
 }
 
 
@@ -64,10 +86,16 @@ header {
     opacity: 0;
     animation: myanimacion2 15s;
     animation-fill-mode: forwards;
+
     @keyframes myanimacion2 {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-}
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
 
     .centro {
         /*esto es el centro de la pagina web*/

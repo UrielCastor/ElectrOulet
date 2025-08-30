@@ -6,8 +6,5 @@
 @use "./parciales/locales";
 @use "./parciales/clientes";
 @use "./parciales/footer";
-
-
-
-/*---------------MediaQ---------------------*/
-@use "./parciales/mq";
+/*MQ*/
+@use "./parciales/mediaQ";

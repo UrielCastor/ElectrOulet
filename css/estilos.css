@@ -12,6 +12,19 @@ body {
 header .logo {
   width: 60px;
 }
+header .navbar > .container,
+header .navbar > .container-fluid,
+header .navbar > .container-lg,
+header .navbar > .container-md,
+header .navbar > .container-sm,
+header .navbar > .container-xl,
+header .navbar > .container-xxl {
+  display: flex;
+  flex-wrap: inherit;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
 header .navbar-light .navbar-nav .nav-link.active {
   font-family: "Michroma", sans-serif;
   margin: 1 0px;
@@ -262,24 +275,25 @@ footer .divfot2 {
   text-decoration: none;
 }
 
-/*---------------MediaQ---------------------*/
-/*---------------------Mobile*****************************************/
+/*MQ*/
+/*-----------------MOVILE---------------------*/
 @media (max-width: 650px) {
   /*Index*/
-  .centro {
+  .mainsito .centro {
     display: grid;
     grid-template-columns: 100%;
     margin-right: 4%;
   }
-  .caja {
+  .mainsito .centro .caja {
     display: grid;
     width: 100%;
     height: auto;
-    justify-content: space-around; /*alineacion horizontal*/
+    justify-content: space-around;
+    /*alineacion horizontal*/
     justify-items: center;
     align-content: center;
   }
-  .descripciones2 {
+  .mainsito .centro .caja .descripciones {
     display: grid;
     align-content: center;
     width: 50%;
@@ -290,7 +304,7 @@ footer .divfot2 {
     font-weight: 600;
     border-radius: 10%;
   }
-  .descripciones {
+  .mainsito .centro .caja .descripciones2 {
     display: grid;
     align-content: center;
     width: 50%;
@@ -301,27 +315,29 @@ footer .divfot2 {
     font-weight: 600;
     border-radius: 10%;
   }
-  /*contacto*/
-  .cntcentro {
+  /*-------------------Contacto---------------------*/
+  .centro3 .centro2 .cntcentro {
     display: grid;
     margin-left: 2%;
+    margin-right: 2%;
     justify-content: left;
     height: 450px;
   }
-  /*Arma Tu PC*/
+  /*-------------------Arma Tu PC------------------*/
   .atpcentro {
     display: grid;
-    grid-template-columns: 1fr;
-    justify-content: left;
+    grid-template-columns: 100%;
+    justify-content: center;
+    margin-right: 4%;
   }
-  /*locales y medios de pago*/
+  /*----------------locales y medios de pago-----------------*/
   .centro2 {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-columns: 100%;
     margin-right: 4%;
   }
-  .mdpcentro {
+  .centro2 .mdpcentro {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-columns: auto;
@@ -332,23 +348,23 @@ footer .divfot2 {
     align-items: center;
     align-content: center;
   }
-  .mapita {
+  .centro2 .mdpcentro .mapita {
     width: 100%;
     height: 100%;
   }
-  .descripciones2 {
+  .centro2 .mdpcentro .mapita .descripciones2 {
     display: none;
   }
-  /*Nuestos Clientes*/
+  /*------------------Nuestos Clientes------------------*/
   .clientess {
     margin-right: 4%;
   }
-  .gridconteiner {
+  .clientess .gridconteiner {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 600px;
   }
-  /*Footer*/
+  /*----------------------Footer-----------------*/
   .divfot {
     display: grid;
     grid-template-columns: 1fr 1fr;

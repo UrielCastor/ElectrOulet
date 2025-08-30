@@ -1,0 +1,11 @@
+git status chequeal el status del proyecto
+git add . guarda todos los archivos que esten editados
+git commit -m "Mensaje de commit" crea un commit
+git log muestra todos los comiit
+git log oneline muestra solo los comits en una linea
+git branch crea ramas
+git checkout <nombre-de-la-rama: Cambia tu espacio de trabajo a otra rama. 
+git pull: Obtiene los cambios de un repositorio remoto y los fusiona con tu rama local. 
+git push origin <rama: Envía tus commits locales a un repositorio remoto
+
+sass --watch input.scss output.css sirve para hacer compilar el scss
