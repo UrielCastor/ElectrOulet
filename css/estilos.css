@@ -51,32 +51,22 @@ header .navbar-light .navbar-nav .nav-link:hover {
   font-family: "Michroma", sans-serif;
   font-size: 80px;
   font-weight: 900;
-  opacity: 0;
-  animation: myanimacion 3s;
+  transition: 1s;
+  animation-name: animacionlogo;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+  animation-delay: 5;
   animation-fill-mode: forwards;
-}
-@keyframes myanimacion {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 
 /*-------------------Main----------------------------------*/
 .mainsito {
-  opacity: 0;
-  animation: myanimacion2 15s;
+  transition: 1s;
+  animation-name: animain;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+  animation-delay: 5;
   animation-fill-mode: forwards;
-}
-@keyframes myanimacion2 {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 .mainsito .centro {
   /*esto es el centro de la pagina web*/
@@ -275,6 +265,43 @@ footer .divfot2 {
   text-decoration: none;
 }
 
+/*-------------KEY------------------------------*/
+@keyframes animacionlogo {
+  0% {
+    opacity: 0;
+    color: rgb(1, 48, 48);
+    transform: translate(1000px);
+  }
+  25% {
+    opacity: 0.5;
+    color: rgb(2, 92, 92);
+    text-shadow: 8px 4px 8px rgb(0, 0, 0);
+  }
+  50% {
+    color: rgb(3, 133, 133);
+    text-shadow: 10px 6px 10px black;
+  }
+  75% {
+    color: rgb(3, 80, 168);
+    text-shadow: 15px 12px 15px black;
+  }
+  100% {
+    opacity: 1;
+    color: rgb(4, 50, 201);
+    text-shadow: 10px 12px 15px black;
+  }
+}
+@keyframes animain {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 100;
+  }
+}
 /*MQ*/
 /*-----------------MOVILE---------------------*/
 @media (max-width: 650px) {

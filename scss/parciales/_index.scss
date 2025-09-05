@@ -65,113 +65,98 @@ header {
     font-family: $letra;
     font-size: 80px;
     font-weight: 900;
-    opacity: 0;
-    animation: myanimacion 3s;
+    transition: 1s;
+    animation-name: animacionlogo;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    animation-delay: 5;
     animation-fill-mode: forwards;
-
-    @keyframes myanimacion {
-        0% {
-            opacity: 0;
-        }
-
-        100% {
-            opacity: 1;
-        }
-    }
 }
-
 
 /*-------------------Main----------------------------------*/
 .mainsito {
-    opacity: 0;
-    animation: myanimacion2 15s;
+    transition: 1s;
+    animation-name: animain;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    animation-delay: 5;
     animation-fill-mode: forwards;
 
-    @keyframes myanimacion2 {
-        0% {
-            opacity: 0;
-        }
+.centro {
+    /*esto es el centro de la pagina web*/
+    display: flex;
+    /*activa flexbox*/
+    padding: 10px;
+    justify-content: center;
+    /*alineacion horizontal*/
+    align-items: center;
 
-        100% {
-            opacity: 1;
-        }
-    }
+    /*alineacion vertical*/
+    .caja {
+        /*esto son los diiferentes box de publicacion*/
 
-    .centro {
-        /*esto es el centro de la pagina web*/
-        display: flex;
-        /*activa flexbox*/
+        width: 100%;
+        height: 50%;
+        background-color: rgba(156, 154, 154, 0.63);
+        /*rgba(133, 130, 130, 0.514);*/
+        border: solid #00000083 4px;
+        margin: 10px;
+        top: 10px;
+        text-align: center;
         padding: 10px;
-        justify-content: center;
-        /*alineacion horizontal*/
-        align-items: center;
+        line-height: 100px;
 
-        /*alineacion vertical*/
-        .caja {
-            /*esto son los diiferentes box de publicacion*/
+        .descripciones {
 
+            display: flex;
+            justify-content: center;
             width: 100%;
-            height: 50%;
-            background-color: rgba(156, 154, 154, 0.63);
-            /*rgba(133, 130, 130, 0.514);*/
-            border: solid #00000083 4px;
-            margin: 10px;
-            top: 10px;
-            text-align: center;
-            padding: 10px;
-            line-height: 100px;
-
-            .descripciones {
-
-                display: flex;
-                justify-content: center;
-                width: 100%;
-                height: 100%;
-                border: solid #00000069 3px;
-                font-family: $letra;
-                font-size: x-large;
-                font-weight: 800;
-                border-radius: 10%;
-
-            }
-
-            .imgventa {
-
-                width: 60%;
-                background-position: center;
-                background-size: contain;
-                border-radius: 10%;
-            }
-
-            .botoncomprar {
-
-                display: flex;
-                justify-content: center;
-                text-decoration: none;
-                padding: 10px 30%;
-                border-radius: 10%;
-                font-family: $letra;
-                font-size: large;
-                font-weight: 800;
-
-            }
-
-            .botoncomprar:hover {
-                background-color: rgb(2, 175, 255);
-
-            }
-
-            .ordenboton {
-                display: flex;
-                justify-content: center;
-            }
-
-            .precio {
-                color: rgb(255, 255, 255);
-                font-family: $letra;
-            }
+            height: 100%;
+            border: solid #00000069 3px;
+            font-family: $letra;
+            font-size: x-large;
+            font-weight: 800;
+            border-radius: 10%;
 
         }
+
+        .imgventa {
+
+            width: 60%;
+            background-position: center;
+            background-size: contain;
+            border-radius: 10%;
+        }
+
+        .botoncomprar {
+
+            display: flex;
+            justify-content: center;
+            text-decoration: none;
+            padding: 10px 30%;
+            border-radius: 10%;
+            font-family: $letra;
+            font-size: large;
+            font-weight: 800;
+
+        }
+
+        .botoncomprar:hover {
+            background-color: rgb(2, 175, 255);
+
+        }
+
+        .ordenboton {
+            display: flex;
+            justify-content: center;
+        }
+
+        .precio {
+            color: rgb(255, 255, 255);
+            font-family: $letra;
+        }
+
     }
+}
 
 }
