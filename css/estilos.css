@@ -1,3 +1,4 @@
+/*-------------mixin---------------------*/
 * {
   margin: 0;
   padding: 0px;
@@ -12,28 +13,14 @@ body {
 header .logo {
   width: 60px;
 }
-header .navbar > .container,
-header .navbar > .container-fluid,
-header .navbar > .container-lg,
-header .navbar > .container-md,
-header .navbar > .container-sm,
-header .navbar > .container-xl,
-header .navbar > .container-xxl {
-  display: flex;
-  flex-wrap: inherit;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: row-reverse;
-}
-header .navbar-light .navbar-nav .nav-link.active {
+header .activomio {
   font-family: "Michroma", sans-serif;
   margin: 1 0px;
   border: solid rgba(103, 103, 103, 0.21) 1px;
-  background-color: rgba(103, 103, 103, 0.21);
-  color: rgb(2, 175, 255);
+  background-color: rgba(0, 36, 243, 0.21);
   border-radius: 10%;
 }
-header .navbar-light .navbar-nav .nav-link {
+header .letranav {
   font-family: "Michroma", sans-serif;
   margin: 1 0px;
   margin-left: auto;
@@ -130,7 +117,6 @@ header .navbar-light .navbar-nav .nav-link:hover {
   font-family: "Michroma", sans-serif;
 }
 
-/*-----------------ANIMACION TITULO--------------------*/
 /*-------------------CONTACTO-----------------------------------*/
 .centro3 {
   height: 100%;
@@ -158,7 +144,7 @@ header .navbar-light .navbar-nav .nav-link:hover {
 /*--------------------------------------------- arma tu pc--------------------------------------------------------------------*/
 .atpcentro {
   display: flex;
-  flex-direction: row;
+  direction: row;
   justify-content: center;
   font-size: large;
   font-weight: 800;
@@ -211,6 +197,7 @@ header .navbar-light .navbar-nav .nav-link:hover {
   width: 100%;
   display: grid;
   margin-left: 2%;
+  margin-right: 20px;
   margin-top: 2%;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 400px 400px 400px;
@@ -223,6 +210,11 @@ header .navbar-light .navbar-nav .nav-link:hover {
 .clientess .gridconteiner .card .card-body {
   justify-items: center;
   background-color: rgba(214, 214, 214, 0.527);
+}
+.clientess .gridconteiner .card .card-body .cardtitulo {
+  text-decoration: underline;
+  color: rgb(85, 141, 167);
+  font-family: "Michroma", sans-serif;
 }
 
 /*---------------------------Footer---------------------------*/
@@ -239,7 +231,7 @@ footer {
   border: 1px solid #000000;
   font-family: "Michroma", sans-serif;
 }
-footer .divfot {
+footer .divfot, footer .divfot2 {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -249,20 +241,16 @@ footer .divfot {
   list-style-type: none;
   text-decoration: none;
 }
-footer .divfot .imgfot {
+footer .divfot .imgfot, footer .divfot2 .imgfot {
   display: flex;
   width: 40px;
   background-position: center;
   background-size: contain;
 }
 footer .divfot2 {
-  display: flex;
   align-items: center;
   justify-content: right;
   color: rgb(255, 255, 255);
-  font-family: "Michroma", sans-serif;
-  list-style-type: none;
-  text-decoration: none;
 }
 
 /*-------------KEY------------------------------*/

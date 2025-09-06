@@ -6,3 +6,15 @@ $negro:black;
 $letra:"Michroma", sans-serif;
 $cprincipal: rgb(85, 141, 167);
 
+/*-------------mixin---------------------*/
+@mixin flexsp{
+    display: flex;
+    direction: row;
+    justify-content:center;
+}
+
+@mixin flexcp ($direcion, $justifi, $aling){
+    flex-direction: $direcion;
+    justify-content: $justifi;
+    align-items: $aling;
+}

@@ -1,9 +1,7 @@
 @use "./variables" as *;
     /*--------------------------------------------- arma tu pc--------------------------------------------------------------------*/
         .atpcentro{
-        display:flex ;
-        flex-direction: row;
-        justify-content:center;
+        @include flexsp;
         font-size:large;
         font-weight: 800;
         width: 100%;

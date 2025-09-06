@@ -32,12 +32,9 @@
         }
 
         .divfot2 {
-            display: flex;
+            @extend.divfot;
             align-items: center;
             justify-content: right;
             color: rgb(255, 255, 255);
-            font-family: "Michroma", sans-serif;
-            list-style-type: none;
-            text-decoration: none;
         }
     }
