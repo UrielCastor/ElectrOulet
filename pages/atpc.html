@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="./css/style.css">-->
     <!-- Mi ScSS-->
      <link rel="stylesheet" href="../css/estilos.css">
-    <title>ElectrOulet</title>
+    <title>ElectrOulet - Tu PC</title>
 </head>
 
 <body>
@@ -61,67 +61,63 @@
         </nav>
     </header>
     <main>
-        <div>
-            <h1 class="electroulet">Electr Oulet</h1>
+        <div class="titulares">
+            <h1 class="encabezados">Arma Tu PC</h1>
+            <h2 class="encabezados2">Componentes</h2>
+            <div><h3 class="encabezados3">Elije la combinacion perfecta para tus seciones de juego, largas horas de trabajo, o solo disfrutar de de streamer favorito</h3></div>
         </div>
+        
         <!--aca va a ir la publicacion de objetos-->
-        <section>
+        <section class="atpsecion">
             <div class="atpcentro">
-                <form action="preciopc.html" method="get">
-                    <label for="atpc">Procesador</label>
+                
+                <form class="atpform" action="preciopc.html" method="get">
+                    <label  for="atpc">Procesador</label>
                     <select name="proce" id="proce">
                         <option value="AMD">AMD</option>
                         <option value="AMD">INTEL</option>
                     </select>
-                    <BR></BR>
-                    <label for="atpc">Memoria RAM</label>
+                    <label class="letras" for="atpc">Memoria RAM</label>
                     <select name="RAM " id="ram">
                         <option value="AMD">8GB</option>
                         <option value="AMD">16GB</option>
                         <option value="AMD">32GB</option>
                     </select>
-                    <BR></BR>
-                    <label for="atpc">GPU</label>
+                      <label class="letras"for="atpc">GPU</label>
                     <select name="GPU" id="GPU">
                         <option value="AMD">AMD</option>
                         <option value="AMD">NVIDIA</option>
                     </select>
-                    <BR></BR>
                     <label for="atpc">Mother</label>
                     <select name="Mother" id="Mother">
                         <option value="AMD">AMD</option>
                         <option value="AMD">NVIDIA</option>
                     </select>
-                    <BR></BR>
                     <label for="atpc">Fuente</label>
                     <select name="fuente" id="fuente">
                         <option value="AMD">BRONCE</option>
                         <option value="AMD">GOLD</option>
                         <option value="AMD">PLATINUM</option>
                     </select>
-                    <BR></BR>
                     <label for="atpc">Gabinete</label>
                     <select name="gabo" id="gabo">
                         <option value="AMD">Mini Tower</option>
                         <option value="AMD">Mid Tower</option>
                         <option value="AMD">Full Tower</option>
                     </select>
-                    <BR></BR>
                     <label for="atpc">Disco</label>
                     <select name="HDD" id="HDD">
                         <option value="AMD">MECANICO 3TB</option>
                         <option value="AMD">SOLIDO 1TB</option>
                         <option value="AMD">M2 1TB</option>
                     </select>
-                    <BR></BR>
                     <label for="atpc">Monitor</label>
                     <select name="gabo" id="gabo">
                         <option value="AMD">24 PULGADAS</option>
                         <option value="AMD">27 PULGADAS</option>
                         <option value="AMD">32 PULGADAS/option>
-                    </select>
-                    <BR></BR>
-                    <input class="botoncomprar" type="submit" name="enviar" id="enviar">
+                    </select>  
+                    <input class="btncomprar" type="submit" name="enviar" id="enviar">
                 </form>
             </div>
         </section>

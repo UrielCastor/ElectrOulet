@@ -17,11 +17,11 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Michroma&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
         rel="stylesheet">
-        <!-- MI css 
+    <!-- MI css 
     <link rel="stylesheet" href="./css/style.css">-->
     <!-- Mi ScSS-->
-     <link rel="stylesheet" href="../css/estilos.css">
-    <title>ElectrOulet</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <title>ElectrOulet - Contacto</title>
 </head>
 
 <body>
@@ -61,40 +61,119 @@
         </nav>
     </header>
     <main>
-        <div>
-            <h1 class="electroulet">Electr Oulet</h1>
+        <div class="titulares">
+            <h1 class="encabezados">Contactanos</h1>
         </div>
         <section>
             <!--carrousel-->
- 
-        <!--aca va a ir la publicacion de objetos-->
-        <section class="centro3">
-            <div class="centro2">
-                <div class="cntcentro">
-                    <form action="gracias.html" method="get">
-                        <label for="">Nombre :</label>
-                        <input type="text" name="Nombre" id="Nombre" required>
-                        <br>
-                        <label for="">Apellido:</label>
-                        <input type="text" name="Apellido" id="Apellido" required>
-                        <br>
-                        <label for="">E-mail:</label>
-                        <input type="email" name="email" id="email" required>
-                        <br>
-                        <label for="">Telefono:</label>
-                        <input type="number" name="number" id="number" required>
-                        <br>
-                        <label for="">Mensaje:</label>
-                        <textarea name="Mensaje" id="Mensaje" required></textarea>
-                        <br>
-                        <input class="botoncomprar" type="submit" name="enviar" id="enviar">
-                    </form>
+
+            <!--aca va a ir la publicacion de objetos-->
+            <section class="centro3">
+                <div class="centro2">
+                    <div class="cntcentro">
+                        <!-- Button trigger modal -->
+                        <button class="btncomprar" data-bs-toggle="modal" data-bs-target="#cargacv">
+                            Carga Tu CV
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="cargacv" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h2 class="modal-title fs-5 informacion" id="cargacv">Trabaja Con Nosotros</h2>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form class="informacion" action="cv.html" method="get">
+                                            <label for="">Nombre :</label>
+                                            <input type="text" name="Nombre" id="Nombre" required>
+                                            <label for="">Apellido:</label>
+                                            <input type="text" name="Apellido" id="Apellido" required>
+                                            <label for="">E-mail:</label>
+                                            <input type="email" name="email" id="email" required>
+                                            <label for="">Telefono:</label>
+                                            <input type="number" name="number" id="number" required>
+                                            <label for="">Mensaje:</label>
+                                            <textarea name="Mensaje" id="Mensaje" required></textarea>
+                                            <input class="tfile" type="file" name="cv" id="cv" required></input>
+                                        
+
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Cerrar</button>
+                                        <input class="btn btn-success" type="submit" name="enviar" id="enviar">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="descipcioncontacto">Tienes conocimientos sobre hardware e informática, no te pierdas
+                            la oportunidad de trabajar con nosotros. Envia tu CV junto con otros datos; nuestro equipo
+                            de Recursos Humanos los revisará, y si cumples con los requisitos solicitados, procederemos
+                            a una entrevista.
+                            Los puestos solicitados son:
+
+                            <li>Administración</li>
+                            <li>Atención al público</li>
+                            <li>Servicio técnico</li>
+                            <li>Logística</li>
+                        </h3>
+
+                    </div>
+                    <div class="cntcentro">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btncomprar" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Contactanos
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h2 class="modal-title fs-5" id="exampleModalLabel">Contactanos</h2>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form class="informacion" action="gracias.html" method="get">
+                                            <label for="">Nombre :</label>
+                                            <input type="text" name="Nombre" id="Nombre" required>
+                                            <label for="">Apellido:</label>
+                                            <input type="text" name="Apellido" id="Apellido" required>
+                                            <label for="">E-mail:</label>
+                                            <input type="email" name="email" id="email" required>
+                                            <label for="">Telefono:</label>
+                                            <input type="number" name="number" id="number" required>
+                                            <label for="">Mensaje:</label>
+                                            <textarea name="Mensaje" id="Mensaje" required></textarea>
+                                       
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Cerrar</button>
+                                        <input class="btn btn-success" type="submit" name="enviar" id="enviar">
+                                     </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="descipcioncontacto">¿Necesitás un presupuesto personalizado, hacer un reclamo sobre
+                            alguna compra o solicitar un servicio? Envíanos un mensaje y, dentro de las 24 horas
+                            hábiles, el departamento de Gestiones se estará comunicando con vos. Este medio de
+                            comuncacion proporciona enlace directo con el departamento de Gestiones interno de la
+                            empresa, solo esta habilitado para usuarios que realizaron una compra o presupuestos con
+                            armado de equipo.
+                            Att. electroulet
+                        </h3>
+                    </div>
+
                 </div>
-            </div>
-            <div>
-                
-            </div>  
-        </section>
+            </section>
     </main>
     <footer>
         <div class="divfot">

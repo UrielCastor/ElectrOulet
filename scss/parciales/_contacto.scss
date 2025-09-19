@@ -1,15 +1,13 @@
 @use "./variables" as *;
+
 /*-------------------CONTACTO-----------------------------------*/
 .centro3 {
     height: 100%;
 
     .centro2 {
-        display: flex;
-
         .cntcentro {
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-columns: 200px;
+            display: flex;
+            flex-direction: column;
             justify-content: center;
             font-size: large;
             font-weight: 800;
@@ -18,9 +16,43 @@
             background-color: rgba(156, 154, 154, 0.63);
             /*rgba(133, 130, 130, 0.514);*/
             border: solid #00000083 4px;
-            color: rgb(255, 255, 255);
-            font-family: $letra;
             padding: 5%;
+            .descipcioncontacto{
+                font-family: $letra;
+                margin-top: 20px;
+                font-size: 3vh;
+            }
+            .informacion {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                color: black;
+                font-family: $letra;
+                margin-bottom: 5px;
+            }
+
+            .tfile {
+                margin-top: 15px;
+                font-size: 14px;
+                font-weight: 900;
+
+            }
+
+            .btncomprar {
+                height: 100%;
+                justify-content: center;
+                text-decoration: none;
+                padding: 1px;
+                border-radius: 10%;
+                font-family: $letra;
+                font-size: large;
+                font-weight: 800;
+            }
+
+            .btncomprar:hover {
+                background-color: rgb(2, 175, 255);
+
+            }
         }
 
     }

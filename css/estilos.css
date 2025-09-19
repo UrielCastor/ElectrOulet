@@ -1,3 +1,44 @@
+/*VARIABLES UNIVERSALES*/
+.redireccion {
+  height: 100%;
+  font-size: 4vh;
+  justify-content: center;
+  align-items: center;
+  font-family: "Michroma", sans-serif;
+  margin-bottom: 200px;
+}
+
+.redireccion2 {
+  color: red;
+}
+
+.titulares {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+.titulares .encabezados {
+  height: 100%;
+  font-size: 70px;
+  justify-content: center;
+  align-items: center;
+  font-family: "Michroma", sans-serif;
+}
+.titulares .encabezados2 {
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+  font-family: "Michroma", sans-serif;
+}
+.titulares .encabezados3 {
+  font-size: 15px;
+  justify-content: center;
+  align-items: center;
+  font-family: "Michroma", sans-serif;
+}
+
 /*-------------mixin---------------------*/
 * {
   margin: 0;
@@ -6,6 +47,7 @@
 }
 
 body {
+  overflow-x: hidden;
   background-color: rgba(133, 130, 130, 0.514);
 }
 
@@ -32,6 +74,7 @@ header .navbar-light .navbar-nav .nav-link:hover {
 
 /*----------------------------titulo-----------------------------*/
 .electroulet {
+  overflow-x: hidden;
   color: rgb(85, 141, 167);
   text-align: center;
   text-decoration: none;
@@ -90,16 +133,16 @@ header .navbar-light .navbar-nav .nav-link:hover {
   border-radius: 10%;
 }
 .mainsito .centro .caja .imgventa {
-  width: 60%;
+  width: 90%;
   background-position: center;
   background-size: contain;
   border-radius: 10%;
 }
 .mainsito .centro .caja .botoncomprar {
-  display: flex;
+  height: 100%;
   justify-content: center;
   text-decoration: none;
-  padding: 10px 30%;
+  padding: 1px;
   border-radius: 10%;
   font-family: "Michroma", sans-serif;
   font-size: large;
@@ -121,13 +164,9 @@ header .navbar-light .navbar-nav .nav-link:hover {
 .centro3 {
   height: 100%;
 }
-.centro3 .centro2 {
-  display: flex;
-}
 .centro3 .centro2 .cntcentro {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-columns: 200px;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   font-size: large;
   font-weight: 800;
@@ -136,30 +175,66 @@ header .navbar-light .navbar-nav .nav-link:hover {
   background-color: rgba(156, 154, 154, 0.63);
   /*rgba(133, 130, 130, 0.514);*/
   border: solid rgba(0, 0, 0, 0.5137254902) 4px;
-  color: rgb(255, 255, 255);
-  font-family: "Michroma", sans-serif;
   padding: 5%;
+}
+.centro3 .centro2 .cntcentro .descipcioncontacto {
+  font-family: "Michroma", sans-serif;
+  margin-top: 20px;
+  font-size: 3vh;
+}
+.centro3 .centro2 .cntcentro .informacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+  font-family: "Michroma", sans-serif;
+  margin-bottom: 5px;
+}
+.centro3 .centro2 .cntcentro .tfile {
+  margin-top: 15px;
+  font-size: 14px;
+  font-weight: 900;
+}
+.centro3 .centro2 .cntcentro .btncomprar {
+  height: 100%;
+  justify-content: center;
+  text-decoration: none;
+  padding: 1px;
+  border-radius: 10%;
+  font-family: "Michroma", sans-serif;
+  font-size: large;
+  font-weight: 800;
+}
+.centro3 .centro2 .cntcentro .btncomprar:hover {
+  background-color: rgb(2, 175, 255);
 }
 
 /*--------------------------------------------- arma tu pc--------------------------------------------------------------------*/
-.atpcentro {
-  display: flex;
-  direction: row;
-  justify-content: center;
-  font-size: large;
-  font-weight: 800;
-  width: 100%;
+.atpsecion .atpcentro {
+  width: 90%;
   height: 30%;
+  margin-left: 10vh;
+  margin-right: 10vh;
   background-color: rgba(156, 154, 154, 0.63); /*rgba(133, 130, 130, 0.514);*/
   border: solid rgba(0, 0, 0, 0.5137254902) 4px;
-  color: rgb(255, 255, 255);
+  color: bcolor;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+}
+.atpsecion .atpcentro .atpform {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
   font-family: "Michroma", sans-serif;
-  padding: 5%;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 /*-----------------locales y medios de pago*/
 .centro2 {
   display: flex;
+  height: 100%;
 }
 .centro2 .mdpcentro {
   width: 100%;
@@ -174,6 +249,7 @@ header .navbar-light .navbar-nav .nav-link:hover {
 }
 .centro2 .mdpcentro .imgmdp {
   display: flex;
+  margin-bottom: 30px;
   flex-direction: row;
   align-items: center;
   color: rgb(255, 255, 255);
@@ -200,12 +276,27 @@ header .navbar-light .navbar-nav .nav-link:hover {
   margin-right: 20px;
   margin-top: 2%;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 400px 400px 400px;
+  grid-template-rows: 400px 400px;
+}
+.clientess .gridconteiner .cardmia {
+  display: flex;
+  justify-content: center;
 }
 .clientess .gridconteiner .card {
+  margin: 10px;
+  margin-right: 8vh;
+  display: flex;
+  justify-content: center;
   display: flex;
   background-color: rgba(156, 154, 154, 0.63);
   border: 2px solid black;
+}
+.clientess .gridconteiner .card .imgcliente {
+  width: 40%;
+  background-position: center;
+  background-size: contain;
+  border-radius: 10%;
+  padding-bottom: 20px;
 }
 .clientess .gridconteiner .card .card-body {
   justify-items: center;
@@ -225,7 +316,7 @@ footer {
   justify-content: space-between;
   top: 100%;
   width: 100%;
-  margin-top: 0;
+  margin-top: 60px;
   padding: 0.5rem;
   background-color: rgb(85, 141, 167);
   border: 1px solid #000000;
@@ -294,6 +385,32 @@ footer .divfot2 {
 /*-----------------MOVILE---------------------*/
 @media (max-width: 650px) {
   /*Index*/
+  .titulares {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+  }
+  .titulares .encabezados {
+    height: 100%;
+    font-size: 4vh;
+    justify-content: center;
+    align-items: center;
+    font-family: "Michroma", sans-serif;
+  }
+  .titulares .encabezados2 {
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    font-family: "Michroma", sans-serif;
+  }
+  .titulares .encabezados3 {
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
+    font-family: "Michroma", sans-serif;
+  }
   .mainsito .centro {
     display: grid;
     grid-template-columns: 100%;
@@ -331,12 +448,52 @@ footer .divfot2 {
     border-radius: 10%;
   }
   /*-------------------Contacto---------------------*/
+  .centro3 {
+    height: 100%;
+  }
   .centro3 .centro2 .cntcentro {
-    display: grid;
-    margin-left: 2%;
-    margin-right: 2%;
-    justify-content: left;
-    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: large;
+    font-weight: 800;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(156, 154, 154, 0.63);
+    /*rgba(133, 130, 130, 0.514);*/
+    border: solid rgba(0, 0, 0, 0.5137254902) 4px;
+    padding: 5%;
+  }
+  .centro3 .centro2 .cntcentro .btncomprar {
+    height: 100%;
+    justify-content: center;
+    text-decoration: none;
+    padding: 1px;
+    border-radius: 10%;
+    font-family: "Michroma", sans-serif;
+    font-size: large;
+    font-weight: 800;
+  }
+  .centro3 .centro2 .cntcentro .btncomprar:hover {
+    background-color: rgb(2, 175, 255);
+  }
+  .centro3 .centro2 .cntcentro .informacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    font-family: "Michroma", sans-serif;
+    margin-bottom: 5px;
+  }
+  .centro3 .centro2 .cntcentro .descipcioncontacto {
+    font-family: "Michroma", sans-serif;
+    margin-top: 20px;
+    font-size: 3vh;
+  }
+  .centro3 .centro2 .cntcentro .tfile {
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: 900;
   }
   /*-------------------Arma Tu PC------------------*/
   .atpcentro {
@@ -372,12 +529,11 @@ footer .divfot2 {
   }
   /*------------------Nuestos Clientes------------------*/
   .clientess {
-    margin-right: 4%;
+    margin-left: 7%;
   }
   .clientess .gridconteiner {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 600px;
+    display: flex;
+    flex-direction: column;
   }
   /*----------------------Footer-----------------*/
   .divfot {
@@ -385,5 +541,6 @@ footer .divfot2 {
     grid-template-columns: 1fr 1fr;
   }
 }
+/*-------------------tablet--------------------*/
 
 /*# sourceMappingURL=estilos.css.map */

@@ -2,6 +2,7 @@
 
 /*---------------------clientes--------------------------------------*/
 .clientess {
+    
     .gridconteiner {
         width: 100%;
         display: grid;
@@ -9,9 +10,24 @@
         margin-right: 20px;
         margin-top: 2%;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 400px 400px 400px;
+        grid-template-rows: 400px 400px ;
+        .cardmia{
+            display: flex;
+            justify-content: center;
 
+        }
         .card {
+            margin: 10px;
+            margin-right: 8vh;
+            display: flex;
+            justify-content: center;
+            .imgcliente{
+            width: 40%;
+            background-position: center;
+            background-size: contain;
+            border-radius: 10%;
+            padding-bottom: 20px;
+            }
             display: flex;
             background-color: rgba(156, 154, 154, 0.63);
             border: 2px solid black;

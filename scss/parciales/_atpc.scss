@@ -1,15 +1,27 @@
 @use "./variables" as *;
     /*--------------------------------------------- arma tu pc--------------------------------------------------------------------*/
-        .atpcentro{
-        @include flexsp;
-        font-size:large;
-        font-weight: 800;
-        width: 100%;
+    .atpsecion{
+    .atpcentro{
+        width: 90%;
         height: 30%;
+        margin-left: 10vh;
+        margin-right: 10vh;
         background-color:rgba(156, 154, 154, 0.63);/*rgba(133, 130, 130, 0.514);*/
         border: solid #00000083 4px;
-        color: rgb(255, 255, 255);
-        font-family: "Michroma", sans-serif;
-        padding: 5%;
+        color: bcolor;
+        justify-items: center;
+        justify-content: center;
+        align-items: center;
+        
+        .atpform{
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            font-family: $letra;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
         
     }
+    }
+    

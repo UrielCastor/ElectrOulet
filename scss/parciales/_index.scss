@@ -7,6 +7,7 @@
 }
 
 body {
+    overflow-x: hidden;
     background-color: $bcolor;
 }
 
@@ -44,6 +45,7 @@ header {
 
 /*----------------------------titulo-----------------------------*/
 .electroulet {
+    overflow-x: hidden;
     color: $cprincipal;
     text-align: center;
     text-decoration: none;
@@ -94,7 +96,7 @@ header {
         .descripciones {
 
             display: flex;
-            justify-content: center;
+            justify-content: center;      
             width: 100%;
             height: 100%;
             border: solid #00000069 3px;
@@ -106,19 +108,17 @@ header {
         }
 
         .imgventa {
-
-            width: 60%;
+            width: 90%;
             background-position: center;
             background-size: contain;
             border-radius: 10%;
         }
 
         .botoncomprar {
-
-            display: flex;
+            height: 100%;
             justify-content: center;
             text-decoration: none;
-            padding: 10px 30%;
+            padding: 1px;
             border-radius: 10%;
             font-family: $letra;
             font-size: large;

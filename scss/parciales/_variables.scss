@@ -1,19 +1,61 @@
-$rojo:red;
-$azul:blue;
-$verde:green;
-$bcolor:rgba(133, 130, 130, 0.514);
-$negro:black;
-$letra:"Michroma", sans-serif;
+$rojo: red;
+$azul: blue;
+$verde: green;
+$bcolor: rgba(133, 130, 130, 0.514);
+$negro: black;
+$letra: "Michroma", sans-serif;
 $cprincipal: rgb(85, 141, 167);
 
-/*-------------mixin---------------------*/
-@mixin flexsp{
-    display: flex;
-    direction: row;
-    justify-content:center;
+
+
+/*VARIABLES UNIVERSALES*/
+.redireccion{
+        height: 100%;
+        font-size: 4vh;
+        justify-content: center;
+        align-items: center;
+        font-family: $letra;
+        margin-bottom: 200px;
+}
+.redireccion2{
+    color: red;
+}
+.titulares {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    .encabezados {
+        height: 100%;
+        font-size: 70px;
+        justify-content: center;
+        align-items: center;
+        font-family: $letra;
+    }
+
+    .encabezados2 {
+        font-size: 20px;
+        justify-content: center;
+        align-items: center;
+        font-family: $letra;
+    }
+    .encabezados3 {
+        font-size: 15px;
+        justify-content: center;
+        align-items: center;
+        font-family: $letra;
+    }
 }
 
-@mixin flexcp ($direcion, $justifi, $aling){
+/*-------------mixin---------------------*/
+@mixin flexsp {
+    display: flex;
+    direction: row;
+    justify-content: center;
+}
+
+@mixin flexcp ($direcion, $justifi, $aling) {
     flex-direction: $direcion;
     justify-content: $justifi;
     align-items: $aling;
