@@ -1,20 +1,22 @@
 @use "./variables.scss" as *;
 /*-----------------MOVILE-------------------------------------------------------*/
 @media (max-width: 576px) {
-.redireccion{
+    .redireccion {
         height: 40%;
         font-size: 2vh;
         justify-content: center;
         align-items: center;
         font-family: $letra;
         margin-bottom: 100px;
-}
-.redireccion2{
-    margin-bottom: 30vh;
-    color: red;
-    font-family: $letra;
-    font-size: small;
-}
+    }
+
+    .redireccion2 {
+        margin-bottom: 30vh;
+        color: red;
+        font-family: $letra;
+        font-size: small;
+    }
+
     /*Index*/
     .titulares {
         display: flex;
@@ -253,28 +255,31 @@
         border: 1px solid #000000;
         font-family: "Michroma", sans-serif;
         font-size: x-small;
-        .imgfot{
-        margin-right: 10px;
+
+        .imgfot {
+            margin-right: 10px;
         }
     }
 }
 
 /*-------------------tablet----------------------------------------------------------------------------------------------------------------------------*/
 @media (min-width: 577px) and (max-width: 768px) {
-.redireccion{
+    .redireccion {
         height: 40%;
         font-size: 3vh;
         justify-content: center;
         align-items: center;
         font-family: $letra;
         margin-bottom: 146px;
-}
-.redireccion2{
-    margin-bottom: 30vh;
-    color: red;
-    font-family: $letra;
-    font-size:medium;
-}
+    }
+
+    .redireccion2 {
+        margin-bottom: 30vh;
+        color: red;
+        font-family: $letra;
+        font-size: medium;
+    }
+
     /*Index*/
     .titulares {
         display: flex;
@@ -515,7 +520,7 @@
     footer {
         display: flex;
         flex-direction: row;
-        justify-content:center;
+        justify-content: center;
         align-items: center;
         width: 100%;
         margin-top: 60px;
@@ -524,40 +529,45 @@
         border: 1px solid #000000;
         font-family: "Michroma", sans-serif;
         font-size: x-small;
-        .imgfot{
+
+        .imgfot {
             margin-left: 10px;
         }
     }
 }
+
 /*-------------------medium-desktop----------------------------------------------------------------------------------------------------------------------------*/
 @media (min-width: 768px) and (max-width: 923px) {
-.redireccion{
+    .redireccion {
         height: 40%;
         font-size: 3vh;
         justify-content: center;
         align-items: center;
         font-family: $letra;
         margin-bottom: 146px;
-}
-.redireccion2{
-    margin-bottom: 30vh;
-    color: red;
-    font-family: $letra;
-    font-size:medium;
-}
-header {
-
-    .activomio {
-         font-size: 2vh;
     }
 
-    .letranav {
+    .redireccion2 {
+        margin-bottom: 30vh;
+        color: red;
         font-family: $letra;
-        font-size: 2vh;
-        margin: 01 0px;
-        margin-left: auto;
+        font-size: medium;
     }
-}
+
+    header {
+
+        .activomio {
+            font-size: 2vh;
+        }
+
+        .letranav {
+            font-family: $letra;
+            font-size: 2vh;
+            margin: 01 0px;
+            margin-left: auto;
+        }
+    }
+
     /*Index*/
     .titulares {
         display: flex;
@@ -798,7 +808,7 @@ header {
     footer {
         display: flex;
         flex-direction: row;
-        justify-content:center;
+        justify-content: center;
         align-items: center;
         width: 100%;
         margin-top: 60px;
@@ -807,7 +817,8 @@ header {
         border: 1px solid #000000;
         font-family: "Michroma", sans-serif;
         font-size: x-small;
-        .imgfot{
+
+        .imgfot {
             margin-left: 10px;
         }
     }

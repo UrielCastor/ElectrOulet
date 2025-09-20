@@ -17,11 +17,13 @@
             /*rgba(133, 130, 130, 0.514);*/
             border: solid #00000083 4px;
             padding: 5%;
-            .descipcioncontacto{
+
+            .descipcioncontacto {
                 font-family: $letra;
                 margin-top: 20px;
                 font-size: 3vh;
             }
+
             .informacion {
                 display: flex;
                 flex-direction: column;

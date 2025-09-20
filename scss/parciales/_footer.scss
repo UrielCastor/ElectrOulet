@@ -1,43 +1,44 @@
    @use "./variables" as *;
+
    /*---------------------------Footer---------------------------*/
    footer {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        justify-items: center;
-        align-items: center;
-        top: 100%;
-        width: 100%;
-        margin-top: 60px;
-        padding: 0.5rem;
-        background-color: rgb(85, 141, 167);
-        border: 1px solid #000000;
-        font-family: "Michroma", sans-serif;
+       display: flex;
+       flex-direction: row;
+       justify-content: center;
+       justify-items: center;
+       align-items: center;
+       top: 100%;
+       width: 100%;
+       margin-top: 60px;
+       padding: 0.5rem;
+       background-color: rgb(85, 141, 167);
+       border: 1px solid #000000;
+       font-family: "Michroma", sans-serif;
 
-        .divfot {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            
-            color: rgb(255, 255, 255);
-            flex-wrap: wrap;
-            font-family: "Michroma", sans-serif;
-            list-style-type: none;
-            text-decoration: none;
+       .divfot {
+           display: flex;
+           flex-direction: row;
+           align-items: center;
 
-            .imgfot {
-                display: flex;
-                width: 40px;
-                margin-left: 10px;
-                background-position: center;
-                background-size: contain;
-            }
-        }
+           color: rgb(255, 255, 255);
+           flex-wrap: wrap;
+           font-family: "Michroma", sans-serif;
+           list-style-type: none;
+           text-decoration: none;
 
-        .divfot2 {
-            @extend.divfot;
-            align-items: center;
-            justify-content: right;
-            color: rgb(255, 255, 255);
-        }
-    }
+           .imgfot {
+               display: flex;
+               width: 40px;
+               margin-left: 10px;
+               background-position: center;
+               background-size: contain;
+           }
+       }
+
+       .divfot2 {
+           @extend.divfot;
+           align-items: center;
+           justify-content: right;
+           color: rgb(255, 255, 255);
+       }
+   }

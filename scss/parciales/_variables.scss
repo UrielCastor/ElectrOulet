@@ -9,23 +9,26 @@ $cprincipal: rgb(85, 141, 167);
 
 
 /*VARIABLES UNIVERSALES*/
-.redireccion{
-        height: 100%;
-        font-size: 4vh;
-        justify-content: center;
-        align-items: center;
-        font-family: $letra;
-        margin-bottom: 800px;
+.redireccion {
+    height: 100%;
+    font-size: 4vh;
+    justify-content: center;
+    align-items: center;
+    font-family: $letra;
+    margin-bottom: 800px;
 }
-.redireccion2{
+
+.redireccion2 {
     color: red;
 }
+
 .titulares {
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     justify-items: center;
+
     .encabezados {
         height: 100%;
         font-size: 70px;
@@ -40,6 +43,7 @@ $cprincipal: rgb(85, 141, 167);
         align-items: center;
         font-family: $letra;
     }
+
     .encabezados3 {
         font-size: 15px;
         justify-content: center;

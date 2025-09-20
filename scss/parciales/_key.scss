@@ -1,38 +1,46 @@
 @use "./variables" as *;
+
 /*-------------KEY------------------------------*/
-    @keyframes animacionlogo {
-        0% {
-            opacity: 0;
-            color: rgb(1, 48, 48);
-            transform: translate( 1000px);   
-        }
-        25%{
-            opacity: 0.5;
-            color: rgb(2, 92, 92);
-            text-shadow: 8px 4px 8px rgb(0, 0, 0);
-        }
-        50%{
-            color: rgb(3, 133, 133);
-            text-shadow: 10px 6px 10px $negro;
-        }
-        75%{
-            color: rgb(3, 80, 168);
-            text-shadow: 15px 12px 15px $negro;
-        }
-        100% {
-            opacity: 1;
-            color: rgb(4, 50, 201);
-            text-shadow: 10px 12px 15px $negro;
-        }
+@keyframes animacionlogo {
+    0% {
+        opacity: 0;
+        color: rgb(1, 48, 48);
+        transform: translate(1000px);
     }
-    @keyframes animain {
-        0%{
-            opacity: 0;
-        }
-        50% {
-            opacity: 0.5;
-        }
-        100%{
-            opacity: 100;
-        }
+
+    25% {
+        opacity: 0.5;
+        color: rgb(2, 92, 92);
+        text-shadow: 8px 4px 8px rgb(0, 0, 0);
     }
+
+    50% {
+        color: rgb(3, 133, 133);
+        text-shadow: 10px 6px 10px $negro;
+    }
+
+    75% {
+        color: rgb(3, 80, 168);
+        text-shadow: 15px 12px 15px $negro;
+    }
+
+    100% {
+        opacity: 1;
+        color: rgb(4, 50, 201);
+        text-shadow: 10px 12px 15px $negro;
+    }
+}
+
+@keyframes animain {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 100;
+    }
+}
