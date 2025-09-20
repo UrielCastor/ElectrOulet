@@ -2,9 +2,10 @@
    /*---------------------------Footer---------------------------*/
    footer {
         display: flex;
-        position: center;
-        flex-direction: row-reverse;
-        justify-content: space-between;
+        flex-direction: row;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
         top: 100%;
         width: 100%;
         margin-top: 60px;
@@ -17,6 +18,7 @@
             display: flex;
             flex-direction: row;
             align-items: center;
+            
             color: rgb(255, 255, 255);
             flex-wrap: wrap;
             font-family: "Michroma", sans-serif;
@@ -26,6 +28,7 @@
             .imgfot {
                 display: flex;
                 width: 40px;
+                margin-left: 10px;
                 background-position: center;
                 background-size: contain;
             }

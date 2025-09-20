@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
   font-family: "Michroma", sans-serif;
-  margin-bottom: 200px;
+  margin-bottom: 800px;
 }
 
 .redireccion2 {
@@ -101,15 +101,11 @@ header .navbar-light .navbar-nav .nav-link:hover {
 .mainsito .centro {
   /*esto es el centro de la pagina web*/
   display: flex;
-  /*activa flexbox*/
   padding: 10px;
   justify-content: center;
-  /*alineacion horizontal*/
   align-items: center;
-  /*alineacion vertical*/
 }
 .mainsito .centro .caja {
-  /*esto son los diiferentes box de publicacion*/
   width: 100%;
   height: 50%;
   background-color: rgba(156, 154, 154, 0.63);
@@ -133,16 +129,18 @@ header .navbar-light .navbar-nav .nav-link:hover {
   border-radius: 10%;
 }
 .mainsito .centro .caja .imgventa {
-  width: 90%;
+  width: 60%;
   background-position: center;
   background-size: contain;
   border-radius: 10%;
 }
 .mainsito .centro .caja .botoncomprar {
-  height: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 50px;
   justify-content: center;
+  align-items: flex-start;
   text-decoration: none;
-  padding: 1px;
   border-radius: 10%;
   font-family: "Michroma", sans-serif;
   font-size: large;
@@ -311,9 +309,10 @@ header .navbar-light .navbar-nav .nav-link:hover {
 /*---------------------------Footer---------------------------*/
 footer {
   display: flex;
-  position: center;
-  flex-direction: row-reverse;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
   top: 100%;
   width: 100%;
   margin-top: 60px;
@@ -335,6 +334,7 @@ footer .divfot, footer .divfot2 {
 footer .divfot .imgfot, footer .divfot2 .imgfot {
   display: flex;
   width: 40px;
+  margin-left: 10px;
   background-position: center;
   background-size: contain;
 }
@@ -382,8 +382,22 @@ footer .divfot2 {
   }
 }
 /*MQ*/
-/*-----------------MOVILE---------------------*/
-@media (max-width: 650px) {
+/*-----------------MOVILE-------------------------------------------------------*/
+@media (max-width: 576px) {
+  .redireccion {
+    height: 40%;
+    font-size: 2vh;
+    justify-content: center;
+    align-items: center;
+    font-family: "Michroma", sans-serif;
+    margin-bottom: 100px;
+  }
+  .redireccion2 {
+    margin-bottom: 30vh;
+    color: red;
+    font-family: "Michroma", sans-serif;
+    font-size: small;
+  }
   /*Index*/
   .titulares {
     display: flex;
@@ -425,14 +439,20 @@ footer .divfot2 {
     justify-items: center;
     align-content: center;
   }
+  .mainsito .centro .caja .imgventa {
+    width: 90%;
+    background-position: center;
+    background-size: contain;
+    border-radius: 10%;
+  }
   .mainsito .centro .caja .descripciones {
     display: grid;
     align-content: center;
-    width: 50%;
-    height: 50%;
+    width: 40%;
+    height: 40%;
     border: solid rgba(0, 0, 0, 0.4117647059) 3px;
     font-family: "Michroma", sans-serif;
-    font-size: large;
+    font-size: small;
     font-weight: 600;
     border-radius: 10%;
   }
@@ -447,9 +467,234 @@ footer .divfot2 {
     font-weight: 600;
     border-radius: 10%;
   }
+  .mainsito .centro .caja .botoncomprar {
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+    justify-content: center;
+    align-items: flex-start;
+    text-decoration: none;
+    border-radius: 10%;
+    font-family: "Michroma", sans-serif;
+    font-size: large;
+    font-weight: 800;
+  }
   /*-------------------Contacto---------------------*/
   .centro3 {
     height: 100%;
+  }
+  .centro3 .centro2 .cntcentro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    font-weight: 800;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(156, 154, 154, 0.63);
+    /*rgba(133, 130, 130, 0.514);*/
+    border: solid rgba(0, 0, 0, 0.5137254902) 4px;
+    padding: 5%;
+    margin: 2vh;
+  }
+  .centro3 .centro2 .cntcentro .btncomprar {
+    height: 100%;
+    justify-content: center;
+    text-decoration: none;
+    padding: 1px;
+    border-radius: 10%;
+    font-family: "Michroma", sans-serif;
+    font-size: small;
+    font-weight: 800;
+    flex-direction: column;
+    height: 4vh;
+    width: 60%;
+  }
+  .centro3 .centro2 .cntcentro .btncomprar:hover {
+    background-color: rgb(2, 175, 255);
+  }
+  .centro3 .centro2 .cntcentro .informacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    font-family: "Michroma", sans-serif;
+    margin-bottom: 5px;
+  }
+  .centro3 .centro2 .cntcentro .descipcioncontacto {
+    font-family: "Michroma", sans-serif;
+    margin-top: 20px;
+    font-size: 2vh;
+  }
+  .centro3 .centro2 .cntcentro .tfile {
+    margin-top: 10px;
+    font-size: 10px;
+    font-weight: 900;
+  }
+  /*-------------------Arma Tu PC------------------*/
+  .atpsecion .atpcentro {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 3vh;
+  }
+  /*----------------locales y medios de pago-----------------*/
+  .centro2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-columns: 100%;
+    margin-right: 5vh;
+    margin-left: 1vh;
+  }
+  .centro2 .mdpcentro {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-columns: auto;
+    height: 100%;
+    background-color: rgba(156, 154, 154, 0.63);
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 1vh;
+  }
+  .centro2 .mdpcentro .mapita {
+    width: 100%;
+    height: 100%;
+  }
+  .centro2 .mdpcentro .mapita .descripciones2 {
+    display: none;
+  }
+  /*------------------Nuestos Clientes------------------*/
+  .clientess {
+    margin-left: 7%;
+  }
+  .clientess .gridconteiner {
+    display: flex;
+    flex-direction: column;
+  }
+  /*----------------------Footer-----------------*/
+  footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    width: 100%;
+    margin-top: 60px;
+    padding: 0.5rem;
+    background-color: rgb(85, 141, 167);
+    border: 1px solid #000000;
+    font-family: "Michroma", sans-serif;
+    font-size: x-small;
+  }
+  footer .imgfot {
+    margin-right: 10px;
+  }
+}
+/*-------------------tablet----------------------------------------------------------------------------------------------------------------------------*/
+@media (min-width: 577px) and (max-width: 768px) {
+  .redireccion {
+    height: 40%;
+    font-size: 3vh;
+    justify-content: center;
+    align-items: center;
+    font-family: "Michroma", sans-serif;
+    margin-bottom: 146px;
+  }
+  .redireccion2 {
+    margin-bottom: 30vh;
+    color: red;
+    font-family: "Michroma", sans-serif;
+    font-size: medium;
+  }
+  /*Index*/
+  .titulares {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+  }
+  .titulares .encabezados {
+    height: 100%;
+    font-size: 4vh;
+    justify-content: center;
+    align-items: center;
+    font-family: "Michroma", sans-serif;
+  }
+  .titulares .encabezados2 {
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    font-family: "Michroma", sans-serif;
+  }
+  .titulares .encabezados3 {
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
+    font-family: "Michroma", sans-serif;
+  }
+  .mainsito .centro {
+    display: flex;
+    justify-content: flex-start;
+    justify-items: center;
+    align-content: center;
+  }
+  .mainsito .centro .caja {
+    display: grid;
+    width: 90%;
+    height: auto;
+    justify-content: space-around;
+    /*alineacion horizontal*/
+    justify-items: center;
+    align-content: center;
+  }
+  .mainsito .centro .caja .imgventa {
+    width: 100%;
+    background-position: center;
+    background-size: contain;
+    border-radius: 10%;
+  }
+  .mainsito .centro .caja .descripciones {
+    display: grid;
+    align-content: center;
+    height: 40%;
+    border: solid rgba(0, 0, 0, 0.4117647059) 3px;
+    font-family: "Michroma", sans-serif;
+    font-size: small;
+    font-weight: 600;
+    border-radius: 10%;
+  }
+  .mainsito .centro .caja .descripciones2 {
+    display: grid;
+    align-content: center;
+    width: 50%;
+    height: 50%;
+    border: solid rgba(0, 0, 0, 0.4117647059) 3px;
+    font-family: "Michroma", sans-serif;
+    font-size: large;
+    font-weight: 600;
+    border-radius: 10%;
+  }
+  .mainsito .centro .caja .botoncomprar {
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+    justify-content: center;
+    align-items: flex-start;
+    text-decoration: none;
+    border-radius: 10%;
+    font-family: "Michroma", sans-serif;
+    font-size: large;
+    font-weight: 800;
+  }
+  /*-------------------Contacto---------------------*/
+  .centro3 {
+    height: 100%;
+  }
+  .centro3 .centro2 {
+    margin-top: 5vh;
   }
   .centro3 .centro2 .cntcentro {
     display: flex;
@@ -460,9 +705,9 @@ footer .divfot2 {
     width: 100%;
     height: 100%;
     background-color: rgba(156, 154, 154, 0.63);
-    /*rgba(133, 130, 130, 0.514);*/
     border: solid rgba(0, 0, 0, 0.5137254902) 4px;
     padding: 5%;
+    margin-left: 3vh;
   }
   .centro3 .centro2 .cntcentro .btncomprar {
     height: 100%;
@@ -496,11 +741,12 @@ footer .divfot2 {
     font-weight: 900;
   }
   /*-------------------Arma Tu PC------------------*/
-  .atpcentro {
-    display: grid;
-    grid-template-columns: 100%;
+  .atpsecion .atpcentro {
+    display: flex;
+    flex-direction: row;
     justify-content: center;
-    margin-right: 4%;
+    align-items: center;
+    margin: 3vh;
   }
   /*----------------locales y medios de pago-----------------*/
   .centro2 {
@@ -508,12 +754,17 @@ footer .divfot2 {
     grid-template-columns: 1fr;
     grid-template-columns: 100%;
     margin-right: 4%;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
   }
   .centro2 .mdpcentro {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-columns: auto;
-    height: 90%;
+    height: 95%;
+    width: 70%;
     background-color: rgba(156, 154, 154, 0.63);
     justify-content: center;
     justify-items: center;
@@ -529,18 +780,273 @@ footer .divfot2 {
   }
   /*------------------Nuestos Clientes------------------*/
   .clientess {
-    margin-left: 7%;
+    margin-left: 4%;
   }
   .clientess .gridconteiner {
-    display: flex;
-    flex-direction: column;
-  }
-  /*----------------------Footer-----------------*/
-  .divfot {
+    width: 98%;
+    height: 90%;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-bottom: 30vh;
+  }
+  .clientess .gridconteiner .gridtamano {
+    height: 50vh;
+  }
+  .clientess .gridconteiner .cardmia {
+    display: flex;
+    justify-content: center;
+  }
+  /*----------------------Footer-----------------*/
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 60px;
+    padding: 0.5rem;
+    background-color: rgb(85, 141, 167);
+    border: 1px solid #000000;
+    font-family: "Michroma", sans-serif;
+    font-size: x-small;
+  }
+  footer .imgfot {
+    margin-left: 10px;
   }
 }
-/*-------------------tablet--------------------*/
+/*-------------------medium-desktop----------------------------------------------------------------------------------------------------------------------------*/
+@media (min-width: 768px) and (max-width: 923px) {
+  .redireccion {
+    height: 40%;
+    font-size: 3vh;
+    justify-content: center;
+    align-items: center;
+    font-family: "Michroma", sans-serif;
+    margin-bottom: 146px;
+  }
+  .redireccion2 {
+    margin-bottom: 30vh;
+    color: red;
+    font-family: "Michroma", sans-serif;
+    font-size: medium;
+  }
+  header .activomio {
+    font-size: 2vh;
+  }
+  header .letranav {
+    font-family: "Michroma", sans-serif;
+    font-size: 2vh;
+    margin: 1 0px;
+    margin-left: auto;
+  }
+  /*Index*/
+  .titulares {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+  }
+  .titulares .encabezados {
+    height: 100%;
+    font-size: 4vh;
+    justify-content: center;
+    align-items: center;
+    font-family: "Michroma", sans-serif;
+  }
+  .titulares .encabezados2 {
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    font-family: "Michroma", sans-serif;
+  }
+  .titulares .encabezados3 {
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
+    font-family: "Michroma", sans-serif;
+  }
+  .mainsito .centro {
+    display: flex;
+    justify-content: flex-start;
+    justify-items: center;
+    align-content: center;
+  }
+  .mainsito .centro .caja {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 90%;
+    height: auto;
+    justify-content: space-around;
+    /*alineacion horizontal*/
+    justify-items: center;
+    align-content: center;
+  }
+  .mainsito .centro .caja .imgventa {
+    width: 100%;
+    background-position: center;
+    background-size: contain;
+    border-radius: 10%;
+  }
+  .mainsito .centro .caja .descripciones {
+    display: grid;
+    align-content: center;
+    height: 40%;
+    border: solid rgba(0, 0, 0, 0.4117647059) 3px;
+    font-family: "Michroma", sans-serif;
+    font-size: small;
+    font-weight: 600;
+    border-radius: 10%;
+  }
+  .mainsito .centro .caja .descripciones2 {
+    display: grid;
+    align-content: center;
+    width: 50%;
+    height: 50%;
+    border: solid rgba(0, 0, 0, 0.4117647059) 3px;
+    font-family: "Michroma", sans-serif;
+    font-size: large;
+    font-weight: 600;
+    border-radius: 10%;
+  }
+  .mainsito .centro .caja .botoncomprar {
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+    justify-content: center;
+    align-items: flex-start;
+    text-decoration: none;
+    border-radius: 10%;
+    font-family: "Michroma", sans-serif;
+    font-size: large;
+    font-weight: 800;
+  }
+  /*-------------------Contacto---------------------*/
+  .centro3 {
+    height: 100%;
+  }
+  .centro3 .centro2 {
+    margin-top: 5vh;
+  }
+  .centro3 .centro2 .cntcentro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: large;
+    font-weight: 800;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(156, 154, 154, 0.63);
+    border: solid rgba(0, 0, 0, 0.5137254902) 4px;
+    padding: 5%;
+    margin-left: 3vh;
+  }
+  .centro3 .centro2 .cntcentro .btncomprar {
+    height: 100%;
+    justify-content: center;
+    text-decoration: none;
+    padding: 1px;
+    border-radius: 10%;
+    font-family: "Michroma", sans-serif;
+    font-size: large;
+    font-weight: 800;
+  }
+  .centro3 .centro2 .cntcentro .btncomprar:hover {
+    background-color: rgb(2, 175, 255);
+  }
+  .centro3 .centro2 .cntcentro .informacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    font-family: "Michroma", sans-serif;
+    margin-bottom: 5px;
+  }
+  .centro3 .centro2 .cntcentro .descipcioncontacto {
+    font-family: "Michroma", sans-serif;
+    margin-top: 20px;
+    font-size: 3vh;
+  }
+  .centro3 .centro2 .cntcentro .tfile {
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: 900;
+  }
+  /*-------------------Arma Tu PC------------------*/
+  .atpsecion .atpcentro {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 3vh;
+  }
+  /*----------------locales y medios de pago-----------------*/
+  .centro2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-columns: 100%;
+    margin-right: 4%;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+  }
+  .centro2 .mdpcentro {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-columns: auto;
+    height: 95%;
+    width: 70%;
+    background-color: rgba(156, 154, 154, 0.63);
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+  }
+  .centro2 .mdpcentro .mapita {
+    width: 100%;
+    height: 100%;
+  }
+  .centro2 .mdpcentro .mapita .descripciones2 {
+    display: none;
+  }
+  /*------------------Nuestos Clientes------------------*/
+  .clientess {
+    margin-left: 4%;
+  }
+  .clientess .gridconteiner {
+    width: 98%;
+    height: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-bottom: 30vh;
+  }
+  .clientess .gridconteiner .gridtamano {
+    height: 50vh;
+  }
+  .clientess .gridconteiner .cardmia {
+    display: flex;
+    justify-content: center;
+  }
+  /*----------------------Footer-----------------*/
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 60px;
+    padding: 0.5rem;
+    background-color: rgb(85, 141, 167);
+    border: 1px solid #000000;
+    font-family: "Michroma", sans-serif;
+    font-size: x-small;
+  }
+  footer .imgfot {
+    margin-left: 10px;
+  }
+}
 
 /*# sourceMappingURL=estilos.css.map */
